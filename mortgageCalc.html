@@ -16,26 +16,27 @@
     </nav>
 
     <header>
-      <h1>Welcome to the Mortgage Calculator Site!</h1>
+      <h1>Mortgage Calculator</h1>
     </header>
 
     <main>
-      <p>
-        Feel free to take a look around and use any of our 3 calculators linked
-        above
-      </p>
+        <!-- input boxes -->
+        <p>Loan Amount: <input type="number" id="loanAmountField"/></p>
+        <!-- check on the decimals and the step="0.01" part -->
+        <p>Yearly interest rate: <input type="number" min="0" max="100" step="0.01" id="interestRateField"/></p>
+        <p>Term length in years: <input type="number" id="termLengthField"/></p>
 
-      <h3>Mortgage Calculator</h3>
+        <!-- Button -->
+        <input type="button" value="calculate" id="calculateButton"/>
 
-        <p>This will calculate your monthly payment on your mortgage.</p>
+        <!-- Answer boxes -->
+        <p>Monthly Mortgage Payment: <input type="number" id="monthlymortgageField" readonly/></p>
 
-      <h3>Compound Interest Calculator</h3>
+        <!-- to be transferred over to the JS files -->
+        <script>
+            
+        </script>
 
-        <p>This will calculate your monthly payment on your mortgage.</p>
-
-      <h3>Annuity Calculator</h3>
-
-        <p>This will calculate your monthly payment on your mortgage.</p>
     </main>
 
     <footer>
