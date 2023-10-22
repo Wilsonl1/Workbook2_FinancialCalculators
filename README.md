@@ -10,7 +10,7 @@
 
 ### Mortgage Calculator page:
     <!-- Description -->
-
+    
     <!-- Images -->
 
 #### Compound Interest Calculator Page:
