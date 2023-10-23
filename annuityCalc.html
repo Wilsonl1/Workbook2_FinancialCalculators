@@ -21,18 +21,24 @@
     </header>
 
     <Main>
+        <!-- setting up boxes and buttons for the calculator -->
+        <p>Monthly Payout: <input type="number" id="monthlyPayoutField"/></p>
+        <p>Expected Interest: <input type="number" id="expectedInterestField"/></p>
+        <p>Number of Years: <input type="number" id="numberOfYearsField"/></p>
+        <p>Payment interval is monthly</p>
+
+        <input type="button" value="Calculate Present Value of Annuity" id="calculateButton"/>
+
+        <p>Present Value: <input type="number" id="presentValueField" readonly/></p>
         
     </Main>
-
     
 
     <footer>
         <p>&copy Copyright 2023.</p>
     </footer>
-    
 
-    <script src="scripts/mortgageCalc.js"></script>
-    <script src="scripts/compoundCalc.js"></script>
+    
     <script src="scripts/annuityCalc.js"></script>
 </body>
 </html>
