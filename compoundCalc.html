@@ -1,53 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Financial Calculators</title>
-    
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="mortgageCalc.html">Mortgage Calculator</a></li>
-            <li><a href="compoundCalc.html">Compound Interest Calculator</a></li>
-            <li><a href="annuityCalc.html">Annuity Calculator</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mortgageCalc.html">Mortgage Calculator</a></li>
+        <li><a href="compoundCalc.html">Compound Interest Calculator</a></li>
+        <li><a href="annuityCalc.html">Annuity Calculator</a></li>
+      </ul>
     </nav>
     <header>
-        <h1>Compound Interest Calculator</h1>
+      <h1>Compound Interest Calculator</h1>
     </header>
 
-    <Main>
-       <!-- setting up boxes and buttons for the calculator -->
-       
-        <p>Deposit amount: <input type="number" id="depositBoxField"/></p>
-        <p>Interest Rate: <input type="number" id="interestRateField"/></p>
-        <p>Number of Years: <input type="number" id="termlengthField"/></p>
+    <main>
+      <!-- setting up boxes and buttons for the calculator -->
 
-        <input type="button" value="Calculate" id="calculate"/>
-        
-        <p>Future Value: <input type="number" id="futureVauleField" readonly/></p>
-        <p>Total Interest Earned: <input type="number" id="totalInterestEarnedField" readonly/></p>
-      
-        <!-- this will all be moved over to JS once it's complete -->
-        <script>
-            window.onload
+      <p>Deposit amount: <input type="number" id="depositAmountField" /></p>
+      <p>Interest Rate: <input type="number" id="interestRateField" /></p>
+      <p>Number of Years: <input type="number" id="termlengthField" /></p>
 
-            function 
+      <input type="button" value="Calculate" id="calculateButton" />
 
-
-
-        </script>
-      </Main>
+      <p>
+        Future Value: <input type="number" id="futureVauleField" readonly />
+      </p>
+      <p>
+        Total Interest Earned:
+        <input type="number" id="totalInterestEarnedField" readonly />
+      </p>
+    </main>
 
     <footer>
-        <p>&copy Copyright 2023.</p>
+      <p>&copy Copyright 2023.</p>
     </footer>
-    
 
-    
     <script src="scripts/compoundCalc.js"></script>
-</body>
+  </body>
 </html>
